@@ -1,0 +1,60 @@
+    1  fdisk -l
+    2  sudo fdisk -l
+    3  sudo fdisk /dev/sdd
+    4  free
+    5  free -h
+    6  sudo mkswap /dev/sdd1
+    7  free -h
+    8  sudo swapon /dev/sdd1
+    9  free -h
+   10  swapon -s
+   11  cat /proc/swaps
+   12  fdisk -l
+   13  sudo fdisk -l
+   14  clear
+   15  sudo fdisk /dev/sdc
+   16  sudo fdisk -l
+   17  sudo fdisk /dev/sdc
+   18  sudp
+   19  sudo fdisk -l
+   20  sudo wipefs -a /dev/sdd2
+   21  sudo wipefs -a /dev/sdd3
+   22  sudo wipefs -a /dev/sdd5
+   23  sudo wipefs -a /dev/sdd6
+   24  sudo wipefs -a /dev/sdc1
+   25  sudo wipefs -a /dev/sdc2
+   26  sudo pvcreate /dev/sdd2
+   27  sudo pvcreate /dev/sdd3
+   28  sudo pvcreate /dev/sdd5
+   29  sudo pvcreate /dev/sdd6
+   30  sudo pvcreate /dev/sdc1
+   31  sudo pvcreate /dev/sdc2
+   32  pvs
+   33  sudo pvs
+   34  exit
+   35  sudo pvs
+   36  sudo vgcrate vg_datos /dev/sdc1 /dev/sdd2
+   37  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   38  sudo vgs
+   39  sudo pvs
+   40  sudo vgcreate vg_web /dev/sdc2
+   41  pvs
+   42  sudo pvs
+   43  sudo lvcreate -L 1G vg_web -n lv_web1
+   44  sudo lvcreate -L 512M vg_web -n lv_web2
+   45  sudo lvcreate -L 512M vg_web -n lv_web3
+   46  sudo lvs
+   47  sudo fdisk -l
+   48  [200~
+   49  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   50  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   51  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   52  exit
+   53  history
+   54  ls -l
+   55  git clone https://github.com/dieherrera606-svg/TP2_Herrera_Diego.git 
+   56  cd TP2_Herrera_Diego/
+   57  sudo pvs > pvs.txt
+   58  sudo vgs > vgs.txt
+   59  sudo lvs > lvs.txt
+   60  history > historial.txt
